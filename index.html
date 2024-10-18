@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente Atendimento - Serviços com IA no WhatsApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-item">
+                <h2>Atendimento Especializado com Agentes IA</h2>
+                <p>Barbearia, Manicure, Médicos e mais. Atendimento via WhatsApp com IA de última geração.</p>
+                <a href="https://wa.me/5511999999999" class="cta-btn">Converse com a IA no WhatsApp</a>
+            </div>
+            <div class="hero-item">
+                <img src="images/hero.jpeg" alt="Imagem de Atendimento" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Nossos Serviços</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-header">
+                    <img src="images/barbearia.png" alt="Serviço de Barbearia" class="service-img">
+                    <h3>Barbearia</h3>
+                </div>
+                <div class="text-container">
+                    <p>Agende seu horário com os melhores barbeiros via WhatsApp.</p>
+                    <a href="https://wa.me/5511999999999" class="service-btn">Agendar</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-header">
+                    <img src="images/manicure.png" alt="Serviço de Manicure">
+                    <h3>Salão de beleza </h3>
+                </div>
+                <div class="text-container">
+                    <p>Atendimento especializado para suas unhas, com IA agilizando seu agendamento.</p>
+                    <a href="https://wa.me/5511999999999" class="service-btn">Agendar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Utilizamos inteligência artificial sofisticada para conectar você aos melhores profissionais em diversos serviços. Nossa IA permite que você faça seu agendamento diretamente pelo WhatsApp, com respostas rápidas e atendimento personalizado.</p>
+        <!-- Imagem ilustrativa sobre IA ou automação -->
+        <img src="images/about-ai.jpeg" alt="Imagem IA Atendimento" class="about-img">
+    </section>
+
+    <div id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>
